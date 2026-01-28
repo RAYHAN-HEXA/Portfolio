@@ -24,6 +24,6 @@ export const projectsData = [
     image: 'https://i.ibb.co/4nJqpPhc/Screenshot-2026-01-05-165944.png',
     tech: ['React', 'Node.js', 'MongoDB'],
     github: 'https://github.com/RAYHAN-HEXA/LessonVault-Client',
-    demo: 'https://lessonvault-demo.netlify.app'
+    demo: 'https://lesson-vault-client.netlify.app/'
   }
 ];
