@@ -12,6 +12,7 @@ import { useToast } from "./Toast";
 import { useTheme } from "../context/ThemeContext";
 import RAYHANIMG from "../assets/RAYHAN-IMAGE.png";
 
+
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -167,8 +168,8 @@ const Hero = () => {
               variants={itemVariants}
             >
               <motion.a
-                href="/"
-                download=""
+                href="/RAYHAN_RESUME.pdf"
+                download="RAYHAN_RESUME.pdf"
                 onClick={handleDownloadResume}
                 className="btn btn-primary btn-lg gap-2"
                 whileHover={{ scale: 1.05 }}
