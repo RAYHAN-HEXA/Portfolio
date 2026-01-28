@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
-import rayhanLogo from "../assets/RAYHAN-LOGO.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,74 +50,21 @@ const Navbar = () => {
     >
       <div className="navbar-start">
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <Link to="/" className="flex items-center gap-3 group">
-            {/* Professional Logo Container */}
-            <div className="relative">
-              {/* Animated gradient border */}
-              <motion.div
-                className="absolute inset-0 rounded-full opacity-75"
-                style={{
-                  background: 'conic-gradient(from 0deg, #6366f1, #8b5cf6, #06b6d4, #6366f1)',
-                  padding: '2px',
-                  borderRadius: '50%'
-                }}
-                animate={{ rotate: 360 }}
-                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-              >
-                <div 
-                  className="w-full h-full rounded-full"
-                  style={{ background: 'var(--bg-primary)' }}
-                ></div>
-              </motion.div>
-              
-              {/* Logo Image */}
-              <motion.div
-                className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-transparent p-0.5"
-                style={{
-                  background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4)'
-                }}
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-              >
-                <img
-                  src={rayhanLogo}
-                  alt="RAYHAN"
-                  className="w-full h-full rounded-full object-cover bg-white"
-                />
-              </motion.div>
-              
-              {/* Glow effect */}
-              <motion.div
-                className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"
-                style={{
-                  background: 'radial-gradient(circle, #6366f1, #8b5cf6)'
-                }}
-                animate={{
-                  scale: [1, 1.2, 1],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
-              />
-            </div>
-            
-            {/* Professional Text Logo */}
-            <div className="flex flex-col">
-              <motion.span
-                className="text-xl font-bold gradient-text-cyan"
-                whileHover={{ scale: 1.05 }}
-              >
-                RAYHAN
-              </motion.span>
-              <span 
-                className="text-xs font-medium tracking-wider"
-                style={{ color: 'var(--text-muted)' }}
-              >
-                DEVELOPER
-              </span>
-            </div>
+          <Link to="/" className="group">
+            {/* Stylish RAYHAN Text Only */}
+            <motion.span
+              className="text-2xl font-bold gradient-text-cyan relative"
+              whileHover={{ scale: 1.05 }}
+              style={{
+                background: 'linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                textShadow: '0 0 20px rgba(99, 102, 241, 0.3)'
+              }}
+            >
+              RAYHAN
+            </motion.span>
           </Link>
         </motion.div>
       </div>

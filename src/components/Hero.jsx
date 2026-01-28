@@ -120,7 +120,7 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-transparent pt-16 overflow-hidden">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16 m-l-5 ml-14">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
           {/* Text Content */}
           <motion.div
