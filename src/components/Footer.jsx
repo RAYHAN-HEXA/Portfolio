@@ -17,7 +17,7 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      icon: FaGithub,
+       icon: FaGithub,
       url: "https://github.com/rayhan-hexa",
       label: "GitHub",
     },
