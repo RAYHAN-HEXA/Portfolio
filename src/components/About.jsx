@@ -29,8 +29,8 @@ const About = () => {
     },
     {
       icon: FaMusic,
-      title: "Music",
-      description: "Love listening to music while coding",
+      title: "Nashed",
+      description: "Love listening to Nashed while coding",
     },
   ];
 
@@ -180,8 +180,7 @@ const About = () => {
 
               <motion.p variants={itemVariants}>
                 <strong className="text-primary">Beyond Coding:</strong> When
-                I&apos;m not coding, you&apos;ll find me playing video games,
-                watching movies, or exploring new technologies. I believe in
+                I&apos;m not coding, you&apos;ll find me listening islamic nashed, or exploring new technologies. I believe in
                 maintaining a healthy work-life balance. I also enjoy playing
                 football and spending time with friends and family.
               </motion.p>

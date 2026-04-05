@@ -10,16 +10,16 @@ const Education = () => {
 
   const educationData = [
     {
-      id: 1,
-      degree: "Bachelor of Science in Zoology",
-      institution: "Dinajpur Govt. College",
-      location: "Dinajpur, Bangladesh",
-      duration: "2021 - Present",
-      description:
-        "I hold a B.Sc. in Computer Science from Northern University of Business and Technology. To bridge the gap between academic theory and industry standards, I completed a specialized MERN Stack Development course through Programming Hero. This journey has equipped me with the technical expertise to build modern, high-performance web applications as a focused Front-End Developer.",
-      icon: FaUniversity,
-      current: false,
-    },
+  id: 1,
+  degree: "B.Sc. in Computer Science and Engineering (CSE)",
+  institution: "Northern University of Business and Technology Khulna",
+  location: "Khulna, Bangladesh",
+  duration: "August 2024 - Present",
+  description:
+    "I am currently pursuing a B.Sc. in Computer Science and Engineering (CSE) at Northern University of Business and Technology Khulna. I started my academic journey in August 2024 and am building a strong foundation in programming, data structures, algorithms, and modern software development.",
+  icon: FaUniversity,
+  current: true,
+},
     {
       id: 2,
       degree: "Complete Web Development Course",
